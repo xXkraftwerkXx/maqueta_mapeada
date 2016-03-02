@@ -33,10 +33,10 @@ var imgSrcCartera = {
         src29:       'img/18-Cartera.png',
         src30:       'img/19-Cartera.png',
         src31:       'img/13.1-Cartera.png',
-        src32:       'img/4.1-Cartera.png'
-    //    src31:'img/19-Cartera.png',
-    //    src32:'img/19-Cartera.png',
-    //    src33:'img/19-Cartera.png',
+        src32:       'img/4.1-Cartera.png',
+        src33:       'img/5.1-Cartera.png',
+        src34:       'img/11.1-Cartera.png',
+        src35:       'img/1.1-Cartera.png'
     //    src34:'img/19-Cartera.png',
     //    src35:'img/19-Cartera.png',
     //    src36:'img/19-Cartera.png',
@@ -140,6 +140,31 @@ $(tabCompromisos).click(function(){
 ////////////////////////////////////////////////////////////////////////////////////////
 
 
+
+
+
+//////////////////////////////    ICONO PERFIL    //////////////////////////////
+$('.icono_perfil').hover(function(){
+    if(!$(imgHolder).attr('data-icon')){
+        $(imgHolder).attr({
+            src:imgSrcCartera.src35,
+            usemap:'#cartera_home',
+            'data-icon':'on'
+    });
+    }else{
+        $(imgHolder).attr({
+            src:imgSrcCartera.src1,
+            usemap:'#cartera_home',
+            'data-icon':''
+        });
+    }
+    
+});
+
+
+////////////////////////////////////////////////////////////////////////////////////////
+
+
 //////////////////////////////    NAVEGACION PRINCIPAL    //////////////////////////////
 
 var miPerfil     = $('.mi_perfil'),
@@ -191,6 +216,12 @@ $('.mostrar_listado_microcampañas').click(function(){
         usemap:'#microcampañas_modal_grafica'
     });
 });
+$('.click_mostrar_drag').click(function(){
+    $(imgHolder).attr({
+        src:imgSrcCartera.src33,
+        usemap:'#microcampañas_modal'
+    });
+});
 $('.guardar_microcampañas').click(function(){
     $(imgHolder).attr({
         src:imgSrcCartera.src21,
@@ -240,6 +271,21 @@ $('.captacion_switch').click(function(){
             });
     }
     
+});
+$('.captacion_dropdown_list').click(function(){
+    if(!imgHolder.attr('data-dropdown')){
+        $(imgHolder).attr({
+            src:imgSrcCartera.src34,
+            usemap:'#captacion',
+            'data-dropdown':'on'
+        });
+    }else{
+        $(imgHolder).attr({
+            src:imgSrcCartera.src25,
+            usemap:'#captacion',
+            'data-dropdown':''
+        });
+    }
 });
 $('.captacion_microcampañas_modal').click(function(){
     

@@ -3,6 +3,9 @@
 *.jpg
 *.jpeg
 *.zip
+node_modules
+respaldos
+dist
 lib
 img
 cambios
@@ -10,3 +13,4 @@ REGIONAL CON MENU CORTO jpg
 REGIONAL CON MENU CORTO
 REGIONAL FINAL
 png regional
+archivos_map

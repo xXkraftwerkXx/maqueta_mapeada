@@ -1,10 +1,10 @@
 var gulp         = require("gulp"),
     concat       = require("gulp-concat"),
     cssnano      = require("gulp-cssnano"),
-    uglify       = require("gulp-uglify"),
-    sass         = require("gulp-sass"),
-    autoprefixer = require("gulp-autoprefixer"),
-    watch        = require("gulp-watch");
+    uglify       = require("gulp-uglify");
+//    sass         = require("gulp-sass"),
+//    autoprefixer = require("gulp-autoprefixer"),
+//    watch        = require("gulp-watch");
 
 var thirdPartyModules = {
     jquery: 'node_modules/jquery/dist/*.min.js'

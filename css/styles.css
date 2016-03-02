@@ -4,6 +4,7 @@ body {
     /*    height:100vh;*/
 }
 
+.subversiones{font-size:25px;margin:10px 0 0 40px;}
 .links {
     display: flex;
     height: 100vh;
